@@ -14,8 +14,16 @@ function insert(elem){
 		img.setAttribute("src", pandaGallery(indice));
 		img.setAttribute("alt", elem);
 		img.setAttribute("class", "img-panda");
+		var span = document.createElement("span");
+			span.setAttribute("class", "close");
+			span.innerText = "X";
 	figure.appendChild(img);
+	figure.appendChild(span);
 	div.appendChild(figure);
+
+	span.addEventListener("click", function(){
+		div.style.display = "none";
+	})
 
 	return div;
 }

@@ -63,6 +63,13 @@ div#gallery{
 	margin: 1% 0;
 }
 
+span{
+	float: left;
+	position: relative;
+	left: 20px;
+	top: 10px;
+}
+
 /* ------------- Sub-menu ----------------- */
 
 div#sub-menu{
