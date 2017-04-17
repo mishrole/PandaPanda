@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	height: 100%;
+	background: #1a1a1a;
+}
+
+ul, li, a, p{
+	color: #ffffcc;
+
+}
+
+/* ----------- Nav bar ----------- */
+
+nav{
+	height: 60px;
+}
+
+ul{
+	background-color: #df2533;
+	padding-left: 20%;
+}
+
+li{
+	list-style: none;
+	display: inline-block;
+	padding: 20px;
+}
+
+a:hover{
+	color: #fff;
+}
