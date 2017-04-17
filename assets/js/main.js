@@ -25,6 +25,12 @@ function insert(elem){
 		div.style.display = "none";
 	})
 
+	var subRestaurar = document.getElementById("sub-restaurar");
+
+	subRestaurar.addEventListener("click", function(){
+		div.style.visibility = "visible"
+	})
+
 	return div;
 }
 
@@ -32,4 +38,10 @@ window.addEventListener("load", function(e){
 	var gallery = text.forEach(function(e){
 		document.getElementById("gallery").appendChild(insert(e));
 	});
+
+	var subOrigen = document.getElementById("sub-origen");
+	var subHistoria = document.getElementById("sub-historia");
+	var subRestaurar = document.getElementById("sub-restaurar");
+
+
 })
