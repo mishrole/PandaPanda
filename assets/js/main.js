@@ -28,7 +28,7 @@ function insert(elem){
 	var subRestaurar = document.getElementById("sub-restaurar");
 
 	subRestaurar.addEventListener("click", function(){
-		div.style.visibility = "visible"
+		div.style.display = "inline-block"
 	})
 
 	return div;
@@ -41,7 +41,24 @@ window.addEventListener("load", function(e){
 
 	var subOrigen = document.getElementById("sub-origen");
 	var subHistoria = document.getElementById("sub-historia");
-	var subRestaurar = document.getElementById("sub-restaurar");
 
+	var origen = document.getElementById("origen");
+	var historia = document.getElementById("historia");
+
+	subOrigen.addEventListener("click", function(){
+		if(origen.style.display == "inline-block"){
+			origen.style.display = "none"
+		}else{
+			origen.style.display = "inline-block"
+		}
+	})
+
+		subHistoria.addEventListener("click", function(){
+		if(historia.style.display == "inline-block"){
+			historia.style.display = "none"
+		}else{
+			historia.style.display = "inline-block"
+		}
+	})
 
 })

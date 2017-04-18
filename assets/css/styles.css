@@ -59,7 +59,7 @@ img{
 }
 
 div#gallery{
-	display: block;
+
 	margin: 1% 0;
 }
 
@@ -85,7 +85,11 @@ div#sub-menu{
 	font-size: 16px;
 }
 
-div#origen, div#historia{
+.sub-opciones > a{
+	text-decoration: none;
+}
+
+#origen, #historia{
 	text-align: left;
 	width: 500px;
 	padding-right: 25px;
